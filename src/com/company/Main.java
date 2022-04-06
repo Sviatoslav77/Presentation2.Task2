@@ -7,18 +7,18 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введіть 5 цілих чисел: ");
+        System.out.println("Введіть 5 елементів масиву: ");
         int array[] = new int[5];
         for (int i = 0; i < 5; i++) {
             array[i] = scanner.nextInt();
         }
-        System.out.println("Ви ввели: " + Arrays.toString(array));
+        System.out.println("Ваш масив: " + Arrays.toString(array));
         for (int i = 0; i < 2; i++){
             int t = array[i];
             array[i] = array[array.length - 1 - i];
             array[array.length - 1 - i] = t;
         }
-        System.out.println("У зворотньому порядку: ");
+        System.out.println("Елементи масиву у зворотньому порядку: ");
         for (int i = 0; i < array.length;i++){
             System.out.println(array[i]);
         }
